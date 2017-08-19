@@ -1,11 +1,78 @@
 [
-    ["assets/img/golden-gate.jpg", "bridge"],
-    ["assets/img/hong-kong.jpg", "cityscape"],
-    ["assets/img/taj-mahal.jpg", "portrait"],
-    ["assets/img/macro.jpg", "macro"],
-    ["assets/img/landscape2.jpg", "landscape"],
-    ["assets/img/landscape3.png", "landscape"],
-    ["assets/img/cityscapes2.jpg", "cityscape"],
-    ["assets/img/cityscapes3.jpg", "cityscape"],
-    ["assets/img/cityscapes4.jpg", "cityscape"]
+  [
+    "assets/img/Bridges/GoldenGate.jpg" ,
+    "bridge"
+  ] ,
+  [
+    "assets/img/CityScape/edit.jpg" ,
+    "cityscape"
+  ] ,
+  [
+    "assets/img/CityScape/NYC_skyline.jpg" ,
+    "cityscape"
+  ] ,
+  [
+    "assets/img/CityScape/OneWorldTradeCenter(2).jpg" ,
+    "cityscape"
+  ] ,
+  [
+    "assets/img/CityScape/TwinPeaks.jpg" ,
+    "cityscape"
+  ] ,
+  [
+    "assets/img/LandScape/ArizonaLake.jpg" ,
+    "landscape"
+  ] ,
+  [
+    "assets/img/LandScape/DSC_1181@2x.jpg" ,
+    "landscape"
+  ] ,
+  [
+    "assets/img/LandScape/NavaValley.jpg" ,
+    "landscape"
+  ] ,
+  [
+    "assets/img/LandScape/SantaCruz.jpg" ,
+    "landscape"
+  ] ,
+  [
+    "assets/img/LandScape/SuperMoon.jpg" ,
+    "landscape"
+  ] ,
+  [
+    "assets/img/Portrait/Chinnu&Vatz.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Sindhu1.JPG" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Rohit_2.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Rupa_pp.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Racha.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Dad&nikki_pp.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Portrait/Vats&Chinnu.jpg" ,
+    "portrait"
+  ] ,
+  [
+    "assets/img/Macro/DSC_2751.jpg" ,
+    "macro"
+  ] ,
+  [
+    "assets/img/Macro/Flower.jpg" ,
+    "macro"
+  ]
 ]

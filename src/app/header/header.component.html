@@ -1,14 +1,13 @@
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Abhinav Jayanthy</a>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Abhinav Jayanthy</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#" (click)="onSelect('home')">Home</a></li>
+            <li><a href="#" (click)="onSelect('photos')">Photos</a></li>
+            <li><a href="#" (click)="onSelect('about')">About</a></li>
+            <li><a href="#" (click)="onSelect('contact')">Contact</a></li>
+        </ul>
     </div>
-    <ul class="nav navbar-nav">
-      <li><a href="home" (click)="onSelect('home')">Home</a></li>
-      <li><a href="photos" (click)="onSelect('photos')">Photos</a></li>
-      <li><a href="about" (click)="onSelect('about')">About</a></li>
-      <li><a href="contact" (click)="onSelect('contact')">Contact</a></li>
-    </ul>
-  </div>
 </nav>
-

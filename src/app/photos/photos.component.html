@@ -1,3 +1,57 @@
-<p>
-  photos works!
-</p>
+<div class="nav-side-menu">
+    <div class="brand"></div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <div class="menu-list">
+        <ul id="menu-content" class="menu-content collapse out">
+            <li (click)="setSelected('all')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg">All</i>
+                </a>
+            </li>
+            <li (click)="setSelected('landscape')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Landscape
+                </a>
+            </li>
+
+            <li (click)="setSelected('cityscape')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Cityscape
+                </a>
+            </li>
+
+            <li (click)="setSelected('bridge')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Bridges
+                </a>
+            </li>
+
+            <li (click)="setSelected('portrait')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Portrait
+                </a>
+            </li>
+            <li (click)="setSelected('macro')">
+                <a href="#">
+                    <i class="fa fa-dashboard fa-lg"></i> Macro
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="container" id="main">
+    <div class="row">
+        <div *ngFor="let img of getList(); let i = index" class="((i+1)%3) === 0 ? row col-sm-4: col-sm-4">
+            <app-thumbnail imgLoc="{{img[0]}}" imgType="{{img[1]}}" *ngIf="isSelected(img[1])" (clickedImg)="imgLocModal = $event.imgLocModal"></app-thumbnail>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img src="{{imgLocModal}}" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

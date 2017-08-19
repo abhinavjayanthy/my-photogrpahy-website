@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PhotosComponent } from './photos/photos.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ThumbnailComponent } from './photos/thumbnail/thumbnail.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     PhotosComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ThumbnailComponent
   ],
   imports: [
     BrowserModule,

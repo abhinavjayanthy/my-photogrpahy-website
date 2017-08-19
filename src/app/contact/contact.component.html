@@ -1,3 +1,38 @@
-<p>
-  contact works!
-</p>
+<div class="container">
+  <h3 class="text-center">Contact</h3>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Like it? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> New Jersey, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> Phone: +1 6303731703</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> Email: abhinavjayanthy.photos@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+  function myMap() {
+    var myCenter = new google.maps.LatLng(40.7128, 74.0059);
+    var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>

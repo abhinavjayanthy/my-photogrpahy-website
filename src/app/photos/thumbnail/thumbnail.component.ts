@@ -11,16 +11,16 @@ export class ThumbnailComponent implements OnInit, OnChanges {
   @Input() imgType: string;
   @Input() imgName: string;
   @Output() clickedImg = new EventEmitter();
-  
+
   imgLocModal: string;
-  
+
   constructor() { }
 
   ngOnInit() {
   }
 
   ngOnChanges(){
-     
+
   }
 
 
